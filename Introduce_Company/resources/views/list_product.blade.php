@@ -101,7 +101,7 @@ hr{
 
                     @endif --}}
                     @foreach ($type2 as $t1)
-                                            <li class="nav-item" role="presentation"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{$t1->name}}</a> </li>
+                    <li class="nav-item" role="presentation"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{$t1->name}}</a> </li>
 
                     @endforeach
                         {{-- <li class="nav-item" role="presentation"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Vật liệu xây dựng</a> </li> --}}

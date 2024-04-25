@@ -1,83 +1,136 @@
 @extends('layout.layout')
 @section('body')
-<!--==============================Content=================================-->
-			<div class="container_12">
-				<div class="grid_12 ">
-					<h2 class="mb0" style="
-                    text-align: center;">Các dự án</h2>
-				</div>
-			</div>
-		</div>
-		<div class="gray_block gb1">
-			<div class="container_12">
-				<div class="gallery">
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Hom dui erosi laoru adip</a></div>
-						In mollis erat mattisy nequelisis sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal bd1"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Vivamus at magna non</a></div>
-						Fermollis erat mattisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal bd2"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Curabitur vel lorem sit</a></div>
-						In mollis erat mattisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal bd3"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Phasellus erat nisuctor</a></div>
-						Hhol mollis erat mattisy kilomi nequelisis, sit amet ultricieser erarutrum. Cras facilisisolo
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-					<div class="clear"></div>
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Etiam dui eros, laoreet</a></div>
-						Mollis erat mattisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra aucto
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal bd1"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Dui eroslaoreetdui ero</a></div>
-						In mollis erat mattisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal bd2"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">A at magna noru adip</a></div>
-						Hlottisy nequelisis, sit ametyter ultricieser erarutrum. Crasyto facilisis, nulla vel viverra auc
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-					<div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal bd3"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Retui erosi laoru adip</a></div>
-						Koliu erat mattisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctom
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-                    <div class="clear"></div>
-                    <div class="grid_3">
-						<a href="{{asset('img/1.jpg')}}" class="gal bd3"><img src="{{asset('img/1.jpg')}}" alt=""></a>
-						<div class="text1"><a href="#">Retui erosi laoru adip</a></div>
-						Koliu erat mattisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctom
-						<br>
-						<a href="#" class="btn">more</a>
-					</div>
-				</div>
-			</div>
-		</div>
-<!--==============================footer=================================-->
-		@endsection
+
+<head>
+    <style>
+        url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+body{
+
+  background-color: #eee;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 3px solid #000;
+
+}
+
+.nav-tabs>li>a{
+
+  text-transform: uppercase;
+  color: #000;
+      font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    border-bottom: 3px solid #000
+}
+
+.navbar{
+
+      border-bottom: 1px solid #00000012;
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+          background-color: #ffffff!important;
+}
+
+.navbar-brand{
+
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: 500;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    align-self: center;
+}
+
+.card{
+
+  border:none;
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+.card-text{
+
+  font-size: 13px;
+}
+
+.guarantee{
+
+  color: #05882c;
+  margin-left: 4px;
+  font-weight: 700
+
+}
+
+hr{
+    margin: 0.2rem 0;
+   color: #bfbebe;
+}
+
+.buttons button{
+
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 2px;
+}
+    </style>
+</head>
+
+
+
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
+                <div class="container-fluid justify-content-center" >
+                    <ul class="nav nav-tabs" id="myTab" role="tablist" >
+                        <li class="nav-item" role="presentation"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Các dự án</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container mt-2 mb-5">
+            <div class="products">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        </div>
+                        <div class="row g-3">
+                            @foreach ($pr1 as $p1 )
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <a href="{{route('list',$p1->id)}}"> <img src="{{ asset('img/1.jpg')}}" class="card-img-top"></a>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between"> <span class="font-weight-bold">{{$p1->name}}</span>
+                                        {{-- <span class="font-weight-bold">$550</span> --}}
+                                    </div>
+
+                                        <p class="card-text mb-1 mt-1">{{$p1->description}}</p>
+                                    </div>
+                                    <hr>
+                                    {{-- <div class="card-body">
+                                        <div class="text-right buttons"> <button class="btn btn-outline-dark">add to wishlist</button> <button class="btn btn-dark">Add to cart</button> </div>
+                                    </div> --}}
+                                </div>
+                            </div>
+                            @endforeach
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+@endsection
+
+
