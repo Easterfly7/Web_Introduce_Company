@@ -9,6 +9,6 @@ class ProjectController extends Controller
     public function index()
     {
         $products1 = DB::table("projects")->get();
-        return view('projects',['pr1'=>$products1]);
+        return view('pages.projects.projects',['pr1'=>$products1]);
     }
 }
